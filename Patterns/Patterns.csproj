@@ -47,6 +47,10 @@
     <Compile Include="BehavioralPatterns\AbstactFactory\EnchantedMazeFactory.cs" />
     <Compile Include="BehavioralPatterns\AbstactFactory\MazeFactory.cs" />
     <Compile Include="BehavioralPatterns\AbstactFactory\Result.cs" />
+    <Compile Include="BehavioralPatterns\Builder\CountingMazeBuilder.cs" />
+    <Compile Include="BehavioralPatterns\Builder\MazeBuilder.cs" />
+    <Compile Include="BehavioralPatterns\Builder\Result.cs" />
+    <Compile Include="BehavioralPatterns\Builder\StandartMazeBuilder.cs" />
     <Compile Include="BehavioralPatterns\Domains\BombedMapSite\BomedWall.cs" />
     <Compile Include="BehavioralPatterns\Domains\BombedMapSite\RoomWithBomb.cs" />
     <Compile Include="BehavioralPatterns\Domains\MazeGame.cs" />
@@ -61,6 +65,7 @@
     <Compile Include="BehavioralPatterns\Interfaces\IDoor.cs" />
     <Compile Include="BehavioralPatterns\Interfaces\IMapSite.cs" />
     <Compile Include="BehavioralPatterns\Interfaces\IMaze.cs" />
+    <Compile Include="BehavioralPatterns\Interfaces\IMazeBuilder.cs" />
     <Compile Include="BehavioralPatterns\Interfaces\IMazeFactory.cs" />
     <Compile Include="BehavioralPatterns\Interfaces\IRoom.cs" />
     <Compile Include="BehavioralPatterns\Interfaces\IWall.cs" />
