@@ -1,6 +1,4 @@
-﻿using Patterns.BehavioralPatterns.Domains;
-
-namespace Patterns.BehavioralPatterns.AbstactFactory
+﻿namespace Patterns.BehavioralPatterns.AbstactFactory
 {
     public class Result
     {

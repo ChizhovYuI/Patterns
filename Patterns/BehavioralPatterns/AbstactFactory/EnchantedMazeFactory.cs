@@ -7,7 +7,7 @@ namespace Patterns.BehavioralPatterns.AbstactFactory
     {
         public override IRoom MakeRoom(int number)
         {
-            return new EnchantedRoom(number);
+            return new EnchantedRoom(number, CastSpell());
         }
 
         public override IDoor MakeDoor(IRoom room1, IRoom room2)
@@ -15,7 +15,7 @@ namespace Patterns.BehavioralPatterns.AbstactFactory
             return new DoorNeedingSpell(room1, room2);
         }
 
-        protected virtual Spell CastSpell()
+        private static Spell CastSpell()
         {
             return new Spell();
         }

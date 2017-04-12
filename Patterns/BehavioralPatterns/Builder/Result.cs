@@ -1,6 +1,4 @@
-﻿using Patterns.BehavioralPatterns.Domains;
-
-namespace Patterns.BehavioralPatterns.Builder
+﻿namespace Patterns.BehavioralPatterns.Builder
 {
     public class Result
     {

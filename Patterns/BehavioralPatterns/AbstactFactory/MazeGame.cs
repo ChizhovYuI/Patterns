@@ -1,6 +1,7 @@
-﻿using Patterns.BehavioralPatterns.Interfaces;
+﻿using Patterns.BehavioralPatterns.Domains;
+using Patterns.BehavioralPatterns.Interfaces;
 
-namespace Patterns.BehavioralPatterns.Domains
+namespace Patterns.BehavioralPatterns.AbstactFactory
 {
     public class MazeGame
     {
@@ -24,30 +25,6 @@ namespace Patterns.BehavioralPatterns.Domains
             r2.SetSide(Direction.West, door);
 
             return maze;
-        }
-
-        public IMaze CreateMaze(IMazeBuilder mazeBuilder)
-        {
-            mazeBuilder.BuildMaze();
-
-            mazeBuilder.BuildRoom(1);
-            mazeBuilder.BuildRoom(2);
-            mazeBuilder.BuildDoor(1, 2);
-
-            return mazeBuilder.GetMaze();
-        }
-
-        public IMaze CreateComplexMaze(IMazeBuilder mazeBuilder)
-        {
-            mazeBuilder.BuildMaze();
-
-            for (var i = 0; i < 1000; i++)
-            {
-                mazeBuilder.BuildRoom(i);
-            }
-            // ...
-
-            return mazeBuilder.GetMaze();
         }
     }
 }
